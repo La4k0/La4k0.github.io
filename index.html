@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio and CV of Lachezar Todorov - Software Developer"
+    />
+    <title>Lachezar Todorov | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a href="#home" class="logo">LT</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="tag">Software Developer</p>
+            <h1>Hello, I'm <span>Lachezar Todorov</span></h1>
+            <p class="hero-text">
+              Software Developer experienced in Python and backend development, building practical, real-world applications and business solutions. Skilled in JavaScript, database design, and working with cloud technologies like AWS.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="cv/Lachezar.pdf" download
+                >Download CV</a
+              >
+            </div>
+          </div>
+          <div class="profile-card">
+            <img
+              src="assets/images/profile-picture.jpg"
+              alt="Profile photo of Lachezar Todorov"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>Personal Information</h2>
+          <div class="info-grid">
+            <article class="card">
+              <h3>Basic Details</h3>
+              <ul>
+                <li><strong>Name:</strong> Lachezar Todorov</li>
+                <li><strong>Location:</strong> Sofia, Bulgaria</li>
+                <li><strong>Email:</strong> lachezartodorov37@gmail.com</li>
+                <li><strong>Phone:</strong> +359 89 663 0308</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Education</h3>
+              <ul>
+                <li>Bachelor : Technical University of Sofia</li>
+                <li>Field of Study : Cybersecurity</li>
+                <li>Period: 2023 - 2027</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section section-alt">
+        <div class="container">
+          <h2>Professional Experience</h2>
+          <div class="timeline">
+            <article class="timeline-item card">
+              <img
+                src="assets/images/company-1.jpg"
+                alt="Company Name - company image"
+                class="company-image"
+              />
+              <h3>Software Developer - ISI</h3>
+              <p class="time">June 2025 - Present</p>
+              <ul>
+                <li>Software Developer at ISI Markets working with Python, JavaScript and Databases.</li>
+                <li>Contribute to feature development, bug fixing, and production support while consistently meeting deadlines.</li>
+                <li>Regularly handle complex and high-priority tasks, contribute reusable solutions for the team and contribute to team work by helping colleagues when needed.</li>
+                <li>Focused on writing reliable, maintainable code and improving overall system stability.</li>
+              </ul>
+              <div class="achievement-list">
+                <h4>Achievements</h4>
+                <article class="achievement-item">
+                  <img
+                    src="assets/images/employee-of-the-quarter-q4-2025.png"
+                    alt="Achievement 2 at Company Name"
+                  />
+                  <p>
+                    Employee of the Quarter - Q4 2025
+                  </p>
+                </article>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="cards-grid">
+            <article class="card">
+              <div class="project-slider" data-slider>
+                <div class="project-slider-track">
+                  <img src="assets/images/signed-jersey-mail-project/project-image-1.png" alt="signed-jersey-mail-project-image-1" />
+                  <img src="assets/images/signed-jersey-mail-project/project-image-2.png" alt="signed-jersey-mail-project-image-2" />
+                  <img src="assets/images/project-1-3.jpg" alt="Project 1 preview 3" />
+                </div>
+                <button class="slider-btn prev" type="button" data-prev aria-label="Previous project image">
+                  &#10094;
+                </button>
+                <button class="slider-btn next" type="button" data-next aria-label="Next project image">
+                  &#10095;
+                </button>
+                <div class="slider-dots" data-dots></div>
+              </div>
+              <h3>Signed Jerseys Daily Mail</h3>
+              <p>04/2026 - 05/2026</p>
+              <p><strong>Real-world</strong> automation system used by a football collector for daily tracking and notifications of signed merchandise.</p>
+              <p><strong>Tech Stack</strong> : Python, Playwright (web scraping & automation), PostgreSQL / SQLAlchemy (database ORM), SMTP (email automation), HTML (email templating), Regular Expressions (data parsing), AsyncIO (asynchronous execution), Environment Variables (.env), and automated scheduling workflows.</p>
+              <ul>
+                <li>Web scraping of signed football merchandise with automated data extraction.</li>
+                <li>Data storage and management using "<strong>Supabase</strong>".</li>
+                <li>Custom filtering logic based on budget and favorite team.</li>
+                <li>Visual prioritization of results based on discounts and preferences.</li>
+                <li>Automated email generation and delivery system.</li>
+                <li>Scheduled execution via <strong>AWS</strong> cron jobs.</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/La4k0/signed-jersey-daily-mail" target="_blank" rel="noreferrer">GitHub Repo</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="project-slider" data-slider>
+                <div class="project-slider-track">
+                  <img src="assets/images/store-management-system-project/store-management-system-project-image-2.png" alt="store-management-system-project-image-1" />
+                  <img src="assets/images/store-management-system-project/store-management-system-project-image-4.png" alt="store-management-system-project-image-2" />
+                  <img src="assets/images/store-management-system-project/store-management-system-project-image-6.png" alt="store-management-system-project-image-3" />
+                  <img src="assets/images/store-management-system-project/store-management-system-project-image-1.png" alt="store-management-system-project-image-4" />
+                  <img src="assets/images/store-management-system-project/store-management-system-project-image-3.png" alt="store-management-system-project-image-5" />
+                  <img src="assets/images/store-management-system-project/store-management-system-project-image-5.png" alt="store-management-system-project-image-6" />
+
+                </div>
+                <button class="slider-btn prev" type="button" data-prev aria-label="Previous project image">
+                  &#10094;
+                </button>
+                <button class="slider-btn next" type="button" data-next aria-label="Next project image">
+                  &#10095;
+                </button>
+                <div class="slider-dots" data-dots></div>
+              </div>
+              <h3>Store Management System</h3>
+              <p>03/2026 - 04/2026</p>
+              <p><strong>Real-world</strong> desktop application used by a sewing materials company for daily operations.</p>
+              <p><strong>Tech Stack</strong> : Python, PySide6 (Desktop Application Development), ReportLab for PDF generation, Google Sheets API (gspread) for data management, Telegram Bot API for notifications, Environment Variables (.env), and structured data handling.</p>
+              <ul>
+                <li>Tracks and records daily revenue (turnover).</li>
+                <li>Supports inventory input by logging stock purchases and store restocking.</li>
+                <li>Integrates with <strong>Google Sheets</strong> to maintain two automated records: revenue and store balance.</li>
+                <li>Implements dynamic balance calculation (initial capital adjusted by daily sales and restocking).</li>
+                <li>Generates PDF documents for stock orders.</li>
+                <li>Sends automated notifications (daily reports and orders) via <strong>Telegram</strong> to the business owner.</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/La4k0/store-management-system" target="_blank" rel="noreferrer">GitHub Repo</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="project-slider" data-slider>
+                <div class="project-slider-track">
+                  <img src="assets/images/process-monitoring-app/process-monitoring-app-image-1.png" alt="process-monitoring-app-image-1" />
+                  <img src="assets/images/process-monitoring-app/process-monitoring-app-image-2.png" alt="process-monitoring-app-image-2" />
+                  <img src="assets/images/process-monitoring-app/process-monitoring-app-image-3.png" alt="process-monitoring-app-image-3" />
+                  <img src="assets/images/process-monitoring-app/process-monitoring-app-image-4.png" alt="process-monitoring-app-image-4" />
+                </div>
+                <button class="slider-btn prev" type="button" data-prev aria-label="Previous project image">
+                  &#10094;
+                </button>
+                <button class="slider-btn next" type="button" data-next aria-label="Next project image">
+                  &#10095;
+                </button>
+                <div class="slider-dots" data-dots></div>
+              </div>
+              <h3>Process Monitoring Web Application</h3>
+              <p>05/2025 - 06/2025</p>
+              <p><strong>Process Monitoring Desktop Application</strong> for real-time system process tracking and performance analysis.</p>
+              <p><strong>Tech Stack:</strong> Python, psutil (system monitoring), threading / async execution, data filtering & sorting logic, system process APIs, anomaly detection logic, and real-time UI updates.</p>
+              <ul>
+                <li>Displays active system processes with detailed resource usage.</li>
+                <li>Supports sorting processes.</li>
+                <li>Includes search functionality for filtering processes.</li>
+                <li>Shows parent-child process relationships for better system understanding.</li>
+                <li>Configurable refresh interval for real-time monitoring updates.</li>
+                <li>Detects and highlights abnormal process behavior (anomaly detection feature).</li>
+                <li>Provides interactive UI for system resource inspection and monitoring.</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/La4k0/process-monitoring-app" target="_blank" rel="noreferrer">GitHub Repo</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="project-slider" data-slider>
+                <div class="project-slider-track">
+                  <img src="assets/images/price-comparison-web-app/price-comparison-web-app-image-1.jpg" alt="price-comparison-web-app-image-1" />
+                  <img src="assets/images/price-comparison-web-app/price-comparison-web-app-image-2.jpg" alt="price-comparison-web-app-image-2" />
+                  <img src="assets/images/price-comparison-web-app/price-comparison-web-app-image-3.jpg" alt="price-comparison-web-app-image-3" />
+                  <img src="assets/images/price-comparison-web-app/price-comparison-web-app-image-4.jpg" alt="price-comparison-web-app-image-4" />
+                  <img src="assets/images/price-comparison-web-app/price-comparison-web-app-image-5.jpg" alt="price-comparison-web-app-image-5" />
+                </div>
+                <button class="slider-btn prev" type="button" data-prev aria-label="Previous project image">
+                  &#10094;
+                </button>
+                <button class="slider-btn next" type="button" data-next aria-label="Next project image">
+                  &#10095;
+                </button>
+                <div class="slider-dots" data-dots></div>
+              </div>
+              <h3>Price Comparison Web Application</h3>
+              <p>02/2025 - 04/2025</p>
+              <p><strong>Price Comparison Web Application</strong> for products across US vs Bulgaria marketplaces.</p>
+              <p><strong>Tech Stack</strong> : Python, Flask, Jinja2 templating, JavaScript, HTML/CSS, SQLite, BeautifulSoup & Requests, Authentication system, Session handling, REST API integration.</p>
+              <ul>
+                <li>Web scraping-based price comparison application for products across US vs Bulgaria marketplaces.</li>
+                <li>User authentication system with register/login functionality.</li>
+                <li>Favorites system for saving and tracking selected products.</li>
+                <li>Search history feature for previously viewed items.</li>
+                <li>Backend logic for aggregating and structuring product data.</li>
+                <li>Full-stack web application with database integration.</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/La4k0/Price-Comparison-Web-App" target="_blank" rel="noreferrer">GitHub Repo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section">
+        <div class="container">
+          <h2>Certificates</h2>
+          <div class="cards-grid">
+            <article class="card">
+              <img
+                src="assets/images/certificates/certificate-1.png"
+                alt="Certificate 1"
+              />
+              <h3>The Complete Python Pro Bootcamp</h3>
+              <p>Udemy</p>
+              <p>01/2025 - 03/2025</p>
+              <a
+                href="https://www.udemy.com/certificate/UC-a934669f-a485-4c05-991d-ea2d221be359/"
+                target="_blank"
+                rel="noreferrer"
+                >Validation link</a
+              >
+            </article>
+             <article class="card">
+              <img
+                src="assets/images/certificates/certificate-2.png"
+                alt="Certificate 2"
+              />
+              <h3>The Complete SQL Bootcamp</h3>
+              <p>Udemy</p>
+              <p>12/2025 - 01/2026</p>
+              <a
+                href="https://www.udemy.com/certificate/UC-b56ac6bb-0edc-4f68-aa68-301ab1976c55/"
+                target="_blank"
+                rel="noreferrer"
+                >Validation link</a
+              >
+            </article>
+             <article class="card">
+              <img
+                src="assets/images/certificates/certificate-3.png"
+                alt="Certificate 1"
+              />
+              <h3>AWS Cloud Practitioner Essentials</h3>
+              <p>AWS Skill Builder</p>
+              <p>11/2025 - 12/2025</p>
+              <a
+                href="https://postimg.cc/NyYhdMqN"
+                target="_blank"
+                rel="noreferrer"
+                >Validation link</a
+              >
+            </article>
+            <article class="card">
+              <img
+                src="assets/images/certificates/certificate-4.png"
+                alt="Certificate 2"
+              />
+              <h3>Programming Basics with JavaScript</h3>
+              <p>SoftUni</p>
+              <p>09/2022 - 10/2022</p>
+              <a
+                href="https://softuni.bg/certificates/details/143584/49f9e4f6"
+                target="_blank"
+                rel="noreferrer"
+                >Validation link</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Lachezar Todorov. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://github.com/La4k0" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/lachezar-todorov-0879092a5/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <div class="lightbox" id="imageLightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" data-close-lightbox></div>
+      <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button class="lightbox-close" type="button" id="lightboxCloseButton" aria-label="Close image preview">
+          &times;
+        </button>
+        <img id="lightboxImage" src="" alt="Expanded project preview" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
