@@ -433,6 +433,10 @@ h1 span {
   color: var(--muted);
 }
 
+.recommendation-download {
+  margin-top: 1rem;
+}
+
 .project-slider {
   position: relative;
   overflow: hidden;
